@@ -1,7 +1,5 @@
 import React from "react";
-import Sidebar from "../components/sidebar/Sidebar";
-import EventCard from "@/components/EventCard";
-import EventCalendar from "@/components/Calendar";
+import Sidebar from "./sidebar/Sidebar";
 
 const Layout = ({ children }) => {
   return (

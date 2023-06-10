@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import React from "react";
-import Layout from "@/pages/layout";
+import Layout from "@/components/Layout";
 import EventCard from "@/components/EventCard";
 import EventCalendar from "@/components/Calendar";
 
