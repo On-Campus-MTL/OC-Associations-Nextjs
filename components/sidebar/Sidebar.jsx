@@ -21,10 +21,11 @@ const Sidebar = () => {
           On-Campus
         </h1>
         {/* Create Event Btn */}
-        <Link href="">
-          <div className="w-fit px-12 py-4 bg-secondary hover:bg-orange-500 duration-200 text-white font-dmSans font-bold rounded-full">
-            Create an Event
-          </div>
+        <Link
+          href="/events/Create"
+          className="w-fit px-12 py-4 bg-secondary hover:bg-white duration-200 text-white font-dmSans font-bold rounded-full hover:no-underline hover:text-secondary focus"
+        >
+          Create an Event
         </Link>
         {/* Menu List */}
         <div className="w-full h-full flex flex-col justify-between">
@@ -32,7 +33,7 @@ const Sidebar = () => {
             <Link
               href="/"
               className={
-                "font-dmSans w-full px-10 py-3 bg-primary text-white hover:text-secondary text-xl flex flex-row gap-3 items-center rounded-none hover:bg-white "
+                "font-dmSans w-full px-10 py-3 bg-primary text-white hover:text-secondary text-xl flex flex-row gap-3 items-center rounded-none hover:bg-white hover:no-underline"
               }
             >
               <MdDashboard size={30} />
@@ -41,7 +42,7 @@ const Sidebar = () => {
             <Link
               href="/events"
               className={
-                "font-dmSans w-full px-10 py-3 bg-primary text-white hover:text-secondary text-xl flex flex-row gap-3 items-center rounded-none hover:bg-gray-100 "
+                "font-dmSans w-full px-10 py-3 bg-primary text-white hover:text-secondary text-xl flex flex-row gap-3 items-center rounded-none hover:bg-gray-100 hover:no-underline"
               }
             >
               <MdCalendarMonth size={30} />
@@ -50,7 +51,7 @@ const Sidebar = () => {
             <Link
               href="/analytics"
               className={
-                "font-dmSans w-full px-10 py-3 bg-primary text-white hover:text-secondary text-xl flex flex-row gap-3 items-center rounded-none hover:bg-gray-100 "
+                "font-dmSans w-full px-10 py-3 bg-primary text-white hover:text-secondary text-xl flex flex-row gap-3 items-center rounded-none hover:bg-gray-100 hover:no-underline"
               }
             >
               <MdOutlineBarChart size={30} />

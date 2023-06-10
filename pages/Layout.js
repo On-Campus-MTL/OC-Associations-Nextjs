@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "../components/sidebar/Sidebar";
-import ProSidebar from "@/components/sidebar/ProSidebar";
 import EventCard from "@/components/EventCard";
+import EventCalendar from "@/components/Calendar";
 
 const Layout = ({ children }) => {
   return (
@@ -9,6 +9,7 @@ const Layout = ({ children }) => {
       <Sidebar />
       <div className="px-16 py-8 w-full max-h-full">{children}</div>
       {/* <EventCard /> */}
+      {/* <EventCalendar /> */}
     </main>
   );
 };

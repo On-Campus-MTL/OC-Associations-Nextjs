@@ -1,22 +1,23 @@
 import "@/styles/globals.css";
+import "rsuite/dist/rsuite.min.css";
 import { Lobster, DM_Sans, Inter } from "next/font/google";
 
 const lobster = Lobster({
   subsets: ["latin"],
   // this will be the css variable
-  weight: '400',
+  weight: "400",
   variable: "--font-lobster",
 });
 const dmSans = DM_Sans({
   subsets: ["latin"],
   // this will be the css variable
-  weight: '400',
+  weight: "400",
   variable: "--font-dmSans",
 });
 const inter = Inter({
   subsets: ["latin"],
   // this will be the css variable
-  
+
   variable: "--font-inter",
 });
 

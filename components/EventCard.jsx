@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function EventCard() {
   return (
-    <Link href={""}>
-      <div className="h-80 w-72 rounded-lg flex flex-col shadow-lg">
+    <Link href={""} className="hover:no-underline">
+      <div className="h-80 w-72 rounded-lg flex flex-col shadow-lg ">
         {/* Image */}
         <div className="h-40 w-full bg-gray-400 rounded-t-lg">
           <Image src={image} alt="Event Image" className="rounded-t-lg"></Image>
@@ -32,9 +32,11 @@ export default function EventCard() {
           </div>
 
           {/* Due date & Tickets */}
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-row justify-between items-baseline">
             <p className=" font-inter text-green-500 text-xs">Due in 24 Days</p>
-            <p className=" font-inter text-xs underline">50 Tickets left</p>
+            <p className=" font-inter text-xs underline text-black">
+              50 Tickets left
+            </p>
           </div>
         </div>
       </div>
