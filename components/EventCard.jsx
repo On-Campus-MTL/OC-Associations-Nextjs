@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import image from "../public/image.png";
+import image from "@/public/image.png";
 import Link from "next/link";
 
 export default function EventCard() {
