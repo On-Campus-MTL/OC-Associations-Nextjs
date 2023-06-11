@@ -6,7 +6,7 @@ import EventCard from "@/components/EventCard";
 export default function Events() {
   return (
     <Layout>
-      <div className="flex flex-col justify-start gap-4">
+      <div className="px-16 py-8 flex flex-col justify-start gap-4">
         {/* Title */}
         <h1 className="font-dmSans text-3xl text-black font-medium">Events</h1>
 

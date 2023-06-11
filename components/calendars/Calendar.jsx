@@ -2,7 +2,7 @@ import { Calendar, Badge } from "rsuite";
 
 import React from "react";
 
-export default function EventCalendar() {
+export default function EventCalendar(props) {
   function renderCell(date) {
     const list = getTodoList(date);
 
@@ -13,7 +13,7 @@ export default function EventCalendar() {
     return null;
   }
   return (
-    <div style={{ width: 550 }}>
+    <div style={{ width: props.width }}>
       <Calendar compact bordered />{" "}
     </div>
   );

@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function EventCard() {
   return (
     <Link href={""} className="hover:no-underline">
-      <div className="h-80 w-72 rounded-lg flex flex-col shadow-lg ">
+      <div className="h-80 w-72 rounded-lg flex flex-col shadow-lg bg-white">
         {/* Image */}
         <div className="h-40 w-full bg-gray-400 rounded-t-lg">
           <Image src={image} alt="Event Image" className="rounded-t-lg"></Image>

@@ -5,8 +5,10 @@ import Layout from "@/components/Layout";
 export default function Analytics() {
   return (
     <Layout>
-      <h1>Welcome to Analytics</h1>
-      {/* Rest of the page content */}
+      <div className="px-16 py-8 ">
+        <h1>Welcome to Analytics</h1>
+        {/* Rest of the page content */}
+      </div>
     </Layout>
   );
 }
