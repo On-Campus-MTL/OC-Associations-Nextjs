@@ -3,6 +3,7 @@ import React from "react";
 import Layout from "@/components/Layout";
 import EventCard from "@/components/EventCard";
 import EventCalendar from "@/components/calendars/Calendar";
+import tempimage from "@/public/Image.png";
 
 export default function Home() {
   return (
@@ -25,9 +26,9 @@ export default function Home() {
         <div className="h-full flex flex-col justify-start gap-2 font-dmSans text-xl text-gray-500">
           Upcoming Events
           <div className="flex flex-row gap-8">
-            <EventCard />
-            <EventCard />
-            <EventCard />
+            <EventCard eventImage={tempimage} />
+            <EventCard eventImage={tempimage} />
+            <EventCard eventImage={tempimage} />
           </div>
         </div>
       </div>

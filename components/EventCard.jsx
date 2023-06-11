@@ -2,14 +2,37 @@ import Image from "next/image";
 import React from "react";
 import image from "@/public/Image.png";
 import Link from "next/link";
+import { useState } from "react";
 
-export default function EventCard() {
+export default function EventCard({
+  eventImage,
+  eventName,
+  eventDetails,
+  location,
+  price,
+  numberOfTickets,
+  date,
+  timeStart,
+  timeEnd,
+  tags,
+  faculty,
+  audiance,
+}) {
+  const [cardImage, setCardImage] = useState(image);
+
+  // if (eventImage) {
+  //   setCardImage(eventImage);
+  // }
   return (
     <Link href={""} className="hover:no-underline">
       <div className="h-80 w-72 rounded-lg flex flex-col shadow-lg bg-white">
         {/* Image */}
         <div className="h-40 w-full bg-gray-400 rounded-t-lg">
-          <Image src={image} alt="Event Image" className="rounded-t-lg"></Image>
+          <Image
+            src={eventImage}
+            alt="Event Image"
+            className="rounded-t-lg"
+          ></Image>
         </div>
         {/* Event details */}
         <div className="w-full h-full p-3 flex flex-col justify-between">
@@ -17,17 +40,15 @@ export default function EventCard() {
             {/* Title, Date, location */}
             <div>
               <div className="text-black font-inter font-semibold text-base">
-                The Garden City
+                {eventName}
               </div>
               <div className="text-gray-400 font-inter font-semibold text-xs">
-                The Silicon Valley of India · 2023-05-21{" "}
+                {location} · {date}
               </div>
             </div>
             {/* Brief description */}
             <div className="text-black font-inter text-xs font-normal line-clamp-3">
-              Bengaluru (also called Bangalore) is the center of India&apos;s
-              high-tech industry. The city is also known for its parks and
-              nightlife. How come this keeps going?
+              {eventDetails}
             </div>
           </div>
 
@@ -35,7 +56,7 @@ export default function EventCard() {
           <div className="flex flex-row justify-between items-baseline">
             <p className=" font-inter text-green-500 text-xs">Due in 24 Days</p>
             <p className=" font-inter text-xs underline text-black">
-              50 Tickets left
+              {numberOfTickets} tickets left
             </p>
           </div>
         </div>

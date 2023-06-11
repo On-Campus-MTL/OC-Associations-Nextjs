@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import React from "react";
 import Layout from "@/components/Layout";
 import EventCard from "@/components/EventCard";
+import tempimage from "@/public/Image.png";
 
 export default function Events() {
   return (
@@ -13,7 +14,7 @@ export default function Events() {
         <div className="flex flex-col gap-2">
           <h3 className="font-inter font-bold text-xl text-gray-600">Drafts</h3>
           <div className="flex flex-row gap-8">
-            <EventCard />
+            <EventCard eventImage={tempimage} />
             <EventCard />
             <EventCard />
           </div>
