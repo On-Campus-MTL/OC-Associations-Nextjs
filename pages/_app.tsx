@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import "rsuite/dist/rsuite.min.css";
 import { Lobster, DM_Sans, Inter } from "next/font/google";
 
